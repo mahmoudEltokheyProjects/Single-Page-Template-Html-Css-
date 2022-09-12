@@ -1,0 +1,557 @@
+* , *:after , *:before
+{
+	padding: 0;
+	margin: 0;
+}
+body
+{
+	font-family: sans-serif;
+}
+/* ---------------------------------------- start : navbar section ---------------------------------------- */ 
+.navbar
+{
+	width: 100%;
+	height:auto;
+	/* border: 2px solid #f00; */
+	box-sizing: border-box;
+	background-color:#252f31;
+	position: relative;
+	/* scroll عشان النافبار يظل ثابت حتي لو عملت */
+	position: fixed;
+}
+.navbar .navbarContainer
+{
+	width: 85%;
+	height: auto;
+	margin: auto;
+	overflow: hidden;
+	padding:10px ; 
+}
+.navbar .navbarContainer .logo 
+{
+	float: left;
+	width: 50%;
+	/* border: 2px solid #0f0; */
+	box-sizing: border-box;
+	font-size: 15px;
+	text-transform: uppercase;
+	color:#fff;
+	padding: 11px;
+}
+.navbar .navbarContainer .logo .logoH2  span
+{
+	color:#888;
+}
+.navbar .navbarContainer .ul-div
+{
+	float: right;
+	width: 50%;
+	/* border: 2px solid #00f; */
+	box-sizing: border-box;
+	padding-top:5px;
+}
+.navbar .navbarContainer .ul-div .ul-list
+{
+	list-style: none;
+}
+.navbar .navbarContainer .ul-div .ul-list li
+{
+	display: inline-block;
+	font-weight: bold;	
+	font-size: 18px;
+	
+}
+.navbar .navbarContainer .ul-div .ul-list li a
+{
+	display: block;
+	text-transform: capitalize;
+	text-decoration: none;
+	color:#eb5424;
+	padding: 10px ;
+}
+.navbar .navbarContainer .ul-div .ul-list li a.active
+{
+	color:#2ecc71;
+}
+.navbar .navbarContainer .inputClass ,
+.navbar .navbarContainer .labelClass
+{
+	position: absolute;
+	top:10px;
+	right:10px;
+}
+.navbar .navbarContainer .inputClass 
+{
+	display: none;
+}
+.navbar .navbarContainer .labelClass 
+{
+	width:50px;
+	height: 50px;
+	background-image: url('../images/open.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.navbar .navbarContainer .inputClass:checked ~  .labelClass
+{
+	background-image: url('../images/close.png');
+}
+.navbar .navbarContainer .inputClass:checked ~  .ul-div .ul-list 
+{
+	display: block;
+}
+/* ---------------------------------------- end : navbar section ---------------------------------------- */ 
+/* ---------------------------------------- start : home section ---------------------------------------- */ 
+.home
+{
+	width: 100%;
+	height: auto;
+	/* border: 2px solid #00f;
+	  box-sizing: border-box;
+	*/
+	padding-top: 10px;
+	background-image: url('../images/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/* container of home section */
+.home .homeContainer
+{
+	width: 85%;
+	height: auto;
+	margin: auto ;
+	/*
+	border: 2px solid #0f0;
+	box-sizing: border-box;
+	*/
+	text-align: center;
+}
+/*  paragraph of home section */
+.home .homeContainer .homePara
+{
+	margin-top:10%;
+	font-size: 30px;
+	color: #ccc;
+	text-transform: capitalize;
+	line-height: 1.5 ;
+}
+/* first span of paragraph of home section */
+.home .homeContainer .homePara .phaseShift
+{
+	color: #fff;
+	text-transform: uppercase;
+}
+/* second span of paragraph of home section */
+.home .homeContainer .homePara .lineDownSpan
+{
+	text-decoration: underline;
+	cursor: pointer;
+}
+/* read more button of home section */
+.home .homeContainer    .readBtnClass
+{
+	width: 180px;
+	height:45px;
+	border: 0;
+	outline: 0;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	font-size: 20px;
+	cursor: pointer;
+	text-transform: uppercase;
+	background-color: #D84780;
+	color: #fff;
+	font-weight: bold;
+	border-radius:10px ;
+}
+/* container of three cart in home section */
+.home .homeContainer .threeCartHome
+{
+	width: 100%;
+	height: auto;
+	/*
+	border: 2px solid #000;
+	box-sizing: border-box;
+	*/
+	overflow: hidden;
+}
+.home .homeContainer .threeCartHome .cart1 , 
+.home .homeContainer .threeCartHome .cart2 , 
+.home .homeContainer .threeCartHome .cart3 ,
+.home .homeContainer .threeCartHome .cart4 ,
+.home .homeContainer .threeCartHome .cart5 ,
+.home .homeContainer .threeCartHome .cart6
+{
+	/*
+	border: 2px solid #000;
+	box-sizing: border-box;
+	*/
+	width: 30%;
+	float: left;
+	background-color: #fff;
+	margin-left:2.5%;
+	margin-top:2.5%;
+	margin-bottom:2.5%;
+	border-bottom-left-radius  : 5% ;
+	border-bottom-right-radius : 5% ;
+}
+
+/* images of the 6 cart of the home section */
+.home .homeContainer .threeCartHome .cart1  .cartImg img ,
+.home .homeContainer .threeCartHome .cart2  .cartImg img ,
+.home .homeContainer .threeCartHome .cart3  .cartImg img ,
+.home .homeContainer .threeCartHome .cart4  .cartImg img ,
+.home .homeContainer .threeCartHome .cart5  .cartImg img ,
+.home .homeContainer .threeCartHome .cart6  .cartImg img 
+{
+	width: 100%;
+	height: 100%;
+}
+/* paragraph of the 6 cart of the home section */
+.home .homeContainer .threeCartHome .cart1  .cartImg  p ,
+.home .homeContainer .threeCartHome .cart2  .cartImg  p ,
+.home .homeContainer .threeCartHome .cart3  .cartImg  p ,
+.home .homeContainer .threeCartHome .cart4  .cartImg  p ,
+.home .homeContainer .threeCartHome .cart5  .cartImg  p ,
+.home .homeContainer .threeCartHome .cart6  .cartImg  p
+{
+	padding-top: 10%;	
+	padding-bottom: 10%;	
+}
+/* button of the 6 cart of the home section */
+.home .homeContainer .threeCartHome .cart1  .cartImg  .readBtnClass ,
+.home .homeContainer .threeCartHome .cart2  .cartImg  .readBtnClass ,
+.home .homeContainer .threeCartHome .cart3  .cartImg  .readBtnClass ,
+.home .homeContainer .threeCartHome .cart4  .cartImg  .readBtnClass ,
+.home .homeContainer .threeCartHome .cart5  .cartImg  .readBtnClass ,
+.home .homeContainer .threeCartHome .cart6  .cartImg  .readBtnClass
+{
+	width: 50% ;
+	height:50px ;
+	border: 0;
+	outline: 0;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	font-size:100%;
+	cursor: pointer;
+	text-transform: uppercase;
+	background-color: #D84780;
+	color: #fff ;
+	font-weight: bold ;
+}
+/* ---------------------------------------- end : home section ---------------------------------------- */ 
+/* ---------------------------------------- start : Blog section ---------------------------------------- */ 
+.blog
+{
+	width: 100%;
+	height: auto;
+	background-color:#222;
+	/*
+	border: 2px solid #f00;
+	box-sizing: border-box;
+	*/
+}
+.blog .blogContainer
+{
+	width:85%;
+	height:auto;
+	/* عشان يحس بالمحتوي اللي موجود بداخله ويخلي الارتفاع بتاعه حسب المحتوي اللي بداخله */
+	 overflow: hidden; 
+	margin: auto;
+	padding-top: 50px;
+	/*
+	border: 2px solid #ff0;
+	box-sizing: border-box;
+	*/
+	color: #fff;
+}
+.blog .blogContainer .blog1 , 
+.blog .blogContainer .blog2 , 
+.blog .blogContainer .blog3 , 
+.blog .blogContainer .blog4 
+{
+	float: left;
+	width:45%;
+	margin-bottom:2%;
+	margin-right:5%;
+	/*
+	border: 2px solid #f0f;
+	box-sizing: border-box;
+	*/
+}
+.blog .blogContainer .blog1 , 
+.blog .blogContainer .blog2
+{
+	border-bottom: 0.5px solid #fff;
+	padding-bottom: 15px;
+}
+.blog .blogContainer .blog1  i , 
+.blog .blogContainer .blog2  i , 
+.blog .blogContainer .blog3  i , 
+.blog .blogContainer .blog4  i
+{
+	float: left;
+	width: 15%;
+	/*
+	border: 2px solid #000;
+	box-sizing: border-box;
+	*/
+}
+.blog .blogContainer .blog1  .blogHeadContainer , 
+.blog .blogContainer .blog2  .blogHeadContainer , 
+.blog .blogContainer .blog3  .blogHeadContainer , 
+.blog .blogContainer .blog4  .blogHeadContainer
+{
+	float: left;
+	width: 85%;
+	/*
+	border: 2px solid #0ff;
+	box-sizing: border-box;
+	*/
+}
+.blog .blogContainer .blog1  .blogHeadContainer h2 , 
+.blog .blogContainer .blog2  .blogHeadContainer h2 , 
+.blog .blogContainer .blog3  .blogHeadContainer h2 , 
+.blog .blogContainer .blog4  .blogHeadContainer h2
+{
+	margin-bottom: 5%;
+	text-transform: uppercase;
+}
+.blog .blogContainer .blog1  .blogHeadContainer p , 
+.blog .blogContainer .blog2  .blogHeadContainer p , 
+.blog .blogContainer .blog3  .blogHeadContainer p , 
+.blog .blogContainer .blog4  .blogHeadContainer p
+{
+	color: #bbb;
+}
+/* ---------------------------------------- end : Blog section ---------------------------------------- */ 
+/*----------------------------------------  start : contact us section ---------------------------------------- */
+.contactUs
+{
+	width: 100%;
+	height: auto;
+	/* border:3px solid #0f0; */ 
+	background-color: #D84780;
+}
+.contactUs .contactUsContainer
+{
+	width: 85%;
+	height: auto;
+	margin: auto;
+	overflow: hidden;
+	/* border:3px solid #f00;  */
+	/* to put all content in the center */
+	text-align: center;
+}
+.contactUs .contactUsContainer .contactUsH2
+{
+	font-size: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 5%;
+}
+.contactUs .contactUsContainer .contactUsPara
+{
+	font-size:21px;
+	color: #bbb;
+	text-transform: uppercase;
+}
+.contactUs .contactUsContainer  .formDiv
+{
+	width: 100%;
+	/*
+	border:3px solid #000;
+	box-sizing: border-box;
+	*/
+	margin-top:5%;
+}
+.contactUs .contactUsContainer  .formDiv form 
+{
+	width: 70%;
+	margin: auto;
+}
+.contactUs .contactUsContainer  .formDiv form  .nameInputClass ,
+.contactUs .contactUsContainer  .formDiv form  .emailInputClass ,
+.contactUs .contactUsContainer  .formDiv form  textarea 
+{
+	display:block;
+	width:100%;
+	padding: 10px;
+	margin-top: 15px;
+	border-radius:5px;
+	border:0;
+	outline: 0;	
+}
+
+.contactUs .contactUsContainer  .formDiv form .sendMessClass
+{
+	width:150px;
+	height: 50px;
+	padding: 10px;
+	color:#fff;
+	margin-top:5%;
+	margin-bottom:5%;
+	text-transform: uppercase;
+	background:none;
+	border: 1px solid #ddd;
+	outline: 0;
+	cursor: pointer;
+}
+/*  border-left اثناء الكتابة في الحقل هيعمل */
+.contactUs .contactUsContainer  .formDiv form  .nameInputClass:focus ,
+.contactUs .contactUsContainer  .formDiv form  .emailInputClass:focus ,
+.contactUs .contactUsContainer  .formDiv form  textarea:focus 
+{
+	border-left:5px solid #000;
+}
+/*  ///////////////////////////////////// start :  footer  section /////////////////////////////////////   */
+.footer
+{
+	background-color: #000;
+	width:100%;
+	height: auto;
+	color:#777;
+	text-align: center;
+	padding-top:20px;
+	padding-bottom:20px;
+	margin: 0;
+}
+.footer p
+{
+	font-size: 20px;
+}
+.footer ul
+{
+	list-style: none;
+}
+.footer ul li
+{
+	display: inline-block;
+	padding:10px;
+	margin-top: 10px;
+	border: 2px solid #777;
+	cursor: pointer;
+}
+.footer ul li:hover
+{
+	border: 2px solid #fff;
+}
+/*  ///////////////////////////////////// end :  footer  section /////////////////////////////////////   */
+/*  1- when click on home link  , it send me to home section 
+	2- when click on about link , it send me to about section 
+	3- when click on blog link , it send me to about section 
+	4- when click on contact link , it send me to about section
+  to do this , 1- you must give each section unique id , and put the id name in the href of links of navbar 
+
+*/
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ media query : navbar section  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media (min-width:1191px)
+{
+    /* هخفي الايقونة في الشاشات الكبيرة */
+    .navbar .navbarContainer  .inputClass , 
+	.navbar .navbarContainer  .labelClass
+    {
+        display: none;
+    }
+}
+@media (min-width:0px) and (max-width:1190px)
+{
+    .navbar .navbarContainer  .logo
+    {
+        width: 100%;
+        float: none;
+        /* border:2px solid #0f0; */
+    }
+    .navbar .navbarContainer  .ul-div
+    {  
+        width:100%;
+        float: none;
+    }
+    .navbar .navbarContainer   .ul-div .ul-list
+    { 
+        font-size:21px;
+        /* هخفيها وهتظهر لما اضغط علي الايقونة */
+        display: none;
+        /* border:2px solid #0f0;*/ 
+    }
+    .navbar .navbarContainer  .ul-div .ul-list li
+    {
+        /* تاخذ الصف كله وعشان مفيش عنصر يجي جنبها في نفس الصف  <li> عشان كل */
+        display: block;
+        /* عشان اللينكات تيجي في المنتصف */
+        text-align: center;
+    }
+	
+    .navbar .navbarContainer   .ul-div .ul-list li a:hover
+    {
+        background-color: #fff;
+    }
+}
+@media (min-width:0) and (max-width:785px)
+{
+	 /*  home section */
+	.home .homeContainer .threeCartHome .cart1 , 
+	.home .homeContainer .threeCartHome .cart2 , 
+	.home .homeContainer .threeCartHome .cart3 ,
+	.home .homeContainer .threeCartHome .cart4 ,
+	.home .homeContainer .threeCartHome .cart5 ,
+	.home .homeContainer .threeCartHome .cart6
+	{
+		/* 2.5 % for margin-left and 2.5% for margin-left  */
+		width:45%;
+		float: left;	
+	}
+	/* button of the 6 cart of the home section */
+	.home .homeContainer .threeCartHome .cart1  .cartImg  .readBtnClass ,
+	.home .homeContainer .threeCartHome .cart2  .cartImg  .readBtnClass ,
+	.home .homeContainer .threeCartHome .cart3  .cartImg  .readBtnClass ,
+	.home .homeContainer .threeCartHome .cart4  .cartImg  .readBtnClass ,
+	.home .homeContainer .threeCartHome .cart5  .cartImg  .readBtnClass ,
+	.home .homeContainer .threeCartHome .cart6  .cartImg  .readBtnClass
+	{
+		font-size:14px;
+	}
+	.blog .blogContainer .blog1  .blogHeadContainer h2 , 
+	.blog .blogContainer .blog2  .blogHeadContainer h2 , 
+	.blog .blogContainer .blog3  .blogHeadContainer h2 , 
+	.blog .blogContainer .blog4  .blogHeadContainer h2
+	{
+		font-size: 15px;
+		margin-bottom: 5%;
+		text-transform: uppercase;
+	}
+	.blog .blogContainer .blog1  .blogHeadContainer p , 
+	.blog .blogContainer .blog2  .blogHeadContainer p , 
+	.blog .blogContainer .blog3  .blogHeadContainer p , 
+	.blog .blogContainer .blog4  .blogHeadContainer p
+	{
+		font-size: 10px;
+	}
+	.blog .blogContainer .blog1  i ,
+	.blog .blogContainer .blog2  i , 
+	.blog .blogContainer .blog3  i , 
+	.blog .blogContainer .blog4  i
+	{
+		font-size:20px;
+	}
+	/*  paragraph of home section */
+	.home .homeContainer .homePara
+	{
+		font-size:20px;
+		padding-top:15%;
+	}
+	/* contact us section : header */
+	.contactUs .contactUsContainer .contactUsH2
+	{
+		font-size:25px;
+	}
+	/* contact us section : paragraph */
+	.contactUs .contactUsContainer .contactUsPara
+	{
+		font-size:13px;
+	}
+	
+}
